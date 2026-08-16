@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- WEATHER DASHBOARD  -->
+
+    <div class="container">
+
+        <!-- Left Panel -->
+        <div class="left-panel">
+
+            <div class="head">
+                <img src="a.png" width="50" height="50" alt="Logo">
+                <h1 class="logo">Weather App</h1>
+            </div>
+
+            <!-- Search -->
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="city"
+                    placeholder="Enter City Name">
+
+                <button id="searchBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+            </div>
+
+            <!-- Current Weather -->
+
+            <div class="current-weather">
+
+                <img
+                    id="weather-icon"
+                    src="a.png"
+                    width="120"
+                    alt="Weather">
+
+                <h1 id="temperature">29°C</h1>
+
+                <h2 id="city-name">Dehradun</h2>
+
+                <h3 id="description">Clear Sky</h3>
+
+            </div>
+
+        </div>
+
+        <!-- Right Panel -->
+
+        <div class="right-panel">
+
+            <!-- Weather Details -->
+
+            <div class="section">
+
+                <h2>Weather Details</h2>
+
+                <div class="cards">
+
+                    <div class="card">
+
+                        <i class="fa-solid fa-droplet"></i>
+
+                        <h4>Humidity</h4>
+
+                        <p id="humidity">65%</p>
+
+                    </div>
+
+                    <div class="card">
+
+                        <i class="fa-solid fa-wind"></i>
+
+                        <h4>Wind</h4>
+
+                        <p id="wind">12 km/h</p>
+
+                    </div>
+
+                    <div class="card">
+
+                        <i class="fa-solid fa-eye"></i>
+
+                        <h4>Visibility</h4>
+
+                        <p id="visibility">10 km</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- More Details -->
+
+            <div class="section">
+
+                <h2>More Details</h2>
+
+                <div class="cards">
+
+                    <div class="card">
+
+                        <i class="fa-solid fa-sun"></i>
+
+                        <h4>Sunrise</h4>
+
+                        <p id="sunrise">5:34 AM</p>
+
+                    </div>
+
+                    <div class="card">
+
+                        <i class="fa-solid fa-cloud-sun"></i>
+
+                        <h4>Sunset</h4>
+
+                        <p id="sunset">6:42 PM</p>
+
+                    </div>
+
+                    <div class="card">
+
+                        <i class="fa-solid fa-temperature-half"></i>
+
+                        <h4>Feels Like</h4>
+
+                        <p id="feels-like">31°C</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- 5 Day Forecast -->
+
+            <div class="section">
+
+                <h2>5-Day Forecast</h2>
+
+                <div class="forecast-container">
+
+                    <div class="forecast-card">
+                        <h4>Thu</h4>
+                        <img src="sun.png" width="60" alt="">
+                        <span>30°C</span>
+                    </div>
+
+                    <div class="forecast-card">
+                        <h4>Fri</h4>
+                        <img src="rain.png" width="60" alt="">
+                        <span>27°C</span>
+                    </div>
+
+                    <div class="forecast-card">
+                        <h4>Sat</h4>
+                        <img src="cloudd.png" width="60" alt="">
+                        <span>29°C</span>
+                    </div>
+
+                    <div class="forecast-card">
+                        <h4>Sun</h4>
+                        <img src="sun.png" width="60" alt="">
+                        <span>31°C</span>
+                    </div>
+
+                    <div class="forecast-card">
+                        <h4>Mon</h4>
+                        <img src="thunder.png" width="60" alt="">
+                        <span>26°C</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+<!-- FOOTER  -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+
+                <h2>🌤 Weather Dashboard</h2>
+
+                <p>
+                    Get real-time weather updates from anywhere in the world.
+                </p>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="#">Home</a></li>
+
+                    <li><a href="#">Forecast</a></li>
+
+                    <li><a href="#">About</a></li>
+
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <hr>
+
+            <p>
+                © 2026 Weather Dashboard | Made by <strong>Aditya Raj Alok</strong>
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
