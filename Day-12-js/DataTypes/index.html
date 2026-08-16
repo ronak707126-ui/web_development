@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //DataTypes - Different Types of data
+
+        //1. String - "Anything Between Quotes in String" or "Text"
+
+        var customername = "ron"
+
+        // Build In Method/function - Task
+        // typeof(value)
+
+        console.log(typeof(customername))
+
+        //2. Number - +ve , -ve , decimal Number
+        var age = -12.69
+        console.log(typeof(age))
+
+        //3. Boolean - True or False
+
+        var LoggedIn = true
+        var NetflixSub = "false"
+
+        console.log(typeof(LoggedIn))
+        console.log(typeof(NetflixSub))
+        
+        //4. undefined - when no value is assigned
+        var x
+        console.log(typeof(x))
+
+        //5. null - nothing / empty
+        let discount = null
+        
+
+        // There is a Bug in a js , Datatype of null show Object as output
+
+
+        // Data Type - 2
+
+        // Multiple Value - Array
+
+        //Array : To store Multiple Data of Different Data type
+        //Symbol - [ ] square bracket
+        //Rule : Index No(Position No of data) starts with Zero - 0
+
+        var students = ["ronak" , "rony" , "aditya" , 1102 , true]
+
+        console.log(students)
+
+        //Total No of Data we .length
+        console.log(students.length)
+
+        //Access the Data Through Index No
+        console.log(students[1])
+        console.log(students[3])
+
+
+        //Object : Collection of Data
+        //Symbol : { } curly Bracket
+        //Rule : key:value pair
+
+        var employee1 = {
+            //key(left):value(right)
+
+            name:"ronak",
+            email:"abc@gmail.com",
+            loginstatus : true
+        }
+
+        console.log(employee1)
+
+        //Access It Through KeyName - Objectname.Keyname
+
+        console.log(employee1.email)
+        console.log(employee1.loginstatus)
+
+        //Function - To do a Specific Task
+        // keyword - function functioname
+
+        //Task : Build BillCalculator
+
+        function BillCalculator(){
+            // Body of function - Instruction/logic
+
+            var product1 = "Milk"
+            var product2 = "Bread"
+
+            var price1 = 100
+            var price2 = 50
+
+            var totalBill = price1 + price2
+
+            console.log("The Total Price of",product1,"and",product2,"is :" , totalBill)
+
+        }
+
+        BillCalculator() //Calling the function
+    </script>
+</body>
+</html>
