@@ -1,0 +1,615 @@
+/* Remove default margin and padding */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+body{
+    background-color:rgb(6,6,6);
+}
+
+
+.navbar{
+    background-color:black !important;
+    padding:15px 5%;      /* % padding is responsive */
+    position: relative;
+}
+
+
+.nav-item a{
+    color:white !important;
+    font-size:18px;
+    
+    margin:0 10px;         /* Space between links */
+}
+
+
+.nav-item a:hover{
+    color:rgb(31,182,246) !important;
+    text-decoration:underline;
+    transition:0.4s;
+}
+
+
+.navbar-brand{
+    color:white !important;
+    font-size:30px;
+    font-weight:bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.navbar-brand span{
+    color:rgb(31,182,246);
+}
+
+
+.navbar-brand:hover{
+    color:rgb(31,182,246) !important;
+}
+
+
+.search-box{
+    width:100%;          /* Responsive width */
+    max-width:220px;     /* Maximum width */
+    border-radius:20px;
+}
+
+
+.search-btn{
+    color:rgb(1,78,84);
+    border:2px solid rgb(31,182,246);
+    border-radius:20px;
+    padding:8px 20px;
+    transition:0.4s;
+}
+
+
+.search-btn:hover{
+    background-color:rgb(31,182,246);
+    color:white;
+}
+
+
+.nav{
+    font-weight:500;
+}
+
+/* DROPDOWN  */
+
+/* Dropdown Menu */
+.dropdown-menu{
+    background-color:black;
+    border:1px solid rgb(31,182,246);
+    border-radius:8px;
+}
+
+/* Dropdown Items */
+.dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item:active{
+    background-color: transparent !important;
+    color: cyan !important;
+}
+
+
+
+/* home */
+
+.hero{
+    width:100%;
+    min-height:90vh;              /* Changed from height to min-height */
+    background-image:url("iphone.png");
+    background-size:cover;        /* Makes image fit the section */
+    background-position:center;   /* Centers the image */
+    background-repeat:no-repeat;  /* Prevents image repeating */
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    flex-wrap:wrap;               /* Allows items to move down on small screens */
+
+    padding:40px 8%;              /* Changed from 60px 80px to responsive padding */
+}
+
+.content{
+    color:white;
+    width:45%;                    /* Responsive width */
+    min-width:300px;              /* Prevents text from shrinking too much */
+}
+
+.content h3{
+    color:#1da1ff;
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.content h1{
+    font-size:60px;               /* Slightly smaller */
+    line-height:70px;
+    margin-bottom:20px;
+}
+
+.content p{
+    color:white;
+    font-size:18px;
+    line-height:30px;
+    margin-bottom:35px;
+}
+
+.buttons{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;               /* Buttons move to next line if needed */
+}
+
+.btn1{
+    background:#1688ff;
+    color:white;
+    text-decoration:none;
+    padding:14px 35px;
+    border-radius:6px;
+    transition:0.4s;
+}
+
+.btn2{
+    border:2px solid #1688ff;
+    color:#1688ff;
+    text-decoration:none;
+    padding:12px 35px;
+    border-radius:6px;
+    transition:0.4s;
+}
+
+.btn1:hover{
+    background:#0d6efd;
+    transform:scale(1.1);
+}
+
+.btn2:hover{
+    color:white;
+    background:#1688ff;
+    transform:scale(1.1);
+}
+
+/* about  */
+
+.about-mobile{
+    width:90%;
+    margin:80px auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    flex-wrap:wrap;              /* Allows image and text to move below each other */
+
+    gap:50px;
+
+    background:linear-gradient(135deg,#02142b,#003b5c,#00bcd4);
+
+    padding:40px 5%;             /* % padding is more responsive */
+
+    border-radius:20px;
+    box-shadow:0 0 25px cyan;
+}
+
+.mobile-image{
+    width:45%;                   /* Responsive width */
+    min-width:280px;             /* Prevents image section from becoming too small */
+    text-align:center;
+}
+
+.mobile-image img{
+    width:100%;                  /* Image adjusts automatically */
+    max-width:320px;             /* Maximum size */
+    height:auto;                 /* Keeps image ratio */
+
+    filter:drop-shadow(0 0 20px cyan);
+
+    transition:0.5s;
+}
+
+.mobile-image img:hover{
+    transform:scale(1.05);
+}
+
+.mobile-content{
+    width:45%;                   /* Responsive width */
+    min-width:280px;
+}
+
+.mobile-content h2{
+    color:cyan;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.mobile-content p{
+    color:white;
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 28px;
+    background:cyan;
+    color:#001d3d;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:30px;
+
+    transition:0.4s;
+}
+
+.btn:hover{
+    background:white;
+    color:#0097a7;
+    box-shadow:0 0 20px cyan;
+}
+
+/* features  */
+
+.features{
+    width: 100%;
+    padding: 60px 8%;
+    background: #050b18;
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.heading h2{
+    color: cyan;
+    font-size: 40px;
+}
+
+.heading p{
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.feature-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));   /* Responsive Grid */
+    gap: 25px;                                                    /* Space between cards */
+}
+
+.feature-box{
+    background: #0b1f3a;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    transition: 0.4s;
+}
+
+.feature-box:hover{
+    transform: translateY(-10px);
+    border-color: cyan;
+    box-shadow: 0 0 20px cyan;
+}
+
+.item{
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: cyan;
+}
+.feature-box h3{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.feature-box p{
+    color: #d6d6d6;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.feature-box img{
+    width: 100%;          /* Image becomes responsive */
+    height: auto;         /* Keeps original ratio */
+}
+
+/* benefits  */
+
+.benefits{
+    width: 100%;
+    padding: 60px 8%;
+    background: #081321;
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.heading h2{
+    color: cyan;
+    font-size: 40px;
+}
+
+.heading p{
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.benefit-container{
+    display: flex;
+    flex-wrap: wrap;      /* Makes items move to the next line */
+    justify-content: center;
+    gap: 20px;
+}
+
+.benefit-box{
+    width: 300px;         /* Fixed width for each card */
+}
+
+.benefit-box{
+    background: #102642;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.4s;
+    border: 2px solid transparent;
+}
+
+.benefit-box:hover{
+    transform: translateY(-10px);
+    border-color: cyan;
+    box-shadow: 0 0 15px cyan;
+}
+
+.benefit-box h3{
+    color: cyan;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.benefit-box p{
+    color: white;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* reviews  */
+
+.reviews{
+    width: 100%;
+    padding: 60px 8%;
+    background: #081321;
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.heading h2{
+    color: cyan;
+    font-size: 40px;
+}
+
+.heading p{
+    color: white;
+    font-size: 18px;
+}
+
+/* Responsive using Flexbox */
+
+.review-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;      /* Cards move to next line automatically */
+    gap: 25px;
+}
+
+.review-box{
+    width: 300px;         /* Card width */
+    flex-grow: 1;         /* Card expands if extra space is available */
+
+    background: #102642;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.4s;
+    border: 2px solid transparent;
+}
+
+.review-box:hover{
+    transform: translateY(-10px);
+    border-color: cyan;
+    box-shadow: 0 0 20px cyan;
+}
+
+
+.review-box h3{
+    color: cyan;
+    margin-bottom: 10px;
+}
+
+.review-box p{
+    color: white;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.review-box h4{
+    color: gold;
+    font-size: 20px;
+}
+
+/* shop */
+/*ALL BRANDS */
+
+.brands-page{
+    width:100%;
+    padding:60px 8%;
+    background:#081321;
+}
+
+.heading{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.heading h2{
+    color:cyan;
+    font-size:40px;
+}
+
+.heading p{
+    color:white;
+    font-size:18px;
+}
+
+.brand-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;      /* Responsive */
+    gap:30px;
+}
+
+.brand-box{
+    width:220px;
+    background:#102642;
+    padding:25px;
+    text-align:center;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.brand-box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px cyan;
+}
+
+.brand-box img{
+    width:120px;
+    height:120px;
+    object-fit:contain;
+    margin-bottom:15px;
+    border-radius: 25%;
+}
+
+.brand-box h3{
+    color:white;
+    margin-bottom:15px;
+}
+
+.brand-box a{
+    display:inline-block;
+    background:cyan;
+    color:black;
+    padding:10px 18px;
+    border-radius:25px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.brand-box a:hover{
+    background:white;
+}
+
+.brand-box i{
+    font-size: 70px;
+    color: cyan;
+    margin: 20px 0;
+}
+
+/* recoap  */
+
+.info{
+    width:100%;
+    background:#23272f;
+    padding:60px 8%;
+}
+
+.info-container{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;          /* Responsive */
+    gap:40px;
+}
+
+.info-box{
+    width:220px;
+    flex-grow:1;             /* flex-grow tells a flex item how much of the remaining space it should take inside a flex container. */
+}
+
+.info-box h2{
+    color:cyan;
+    margin-bottom:20px;
+}
+
+.info-box h3{
+    color:white;
+    margin-bottom:20px;
+}
+
+.info-box p{
+    color:#d8d8d8;
+    line-height:1.8;
+    margin-bottom:10px;
+}
+
+.info-box a{
+    display:block;
+    color:#d8d8d8;
+    text-decoration:none;
+    margin-bottom:15px;
+    transition:.3s;
+}
+
+.info-box a:hover{
+    color:cyan;
+    transform: scale(1.1);
+}
+
+
+
+footer{
+   
+    background-color: #003b5c;
+    
+}
+.foot{
+    text-align: center;
+    color: white;
+    justify-content: center;
+}
+
+.social{
+    margin: 20px 0;
+}
+
+.social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid lightblue;
+    font-size: 22px;
+    border-radius: 25%;
+    margin: 10px;
+    transition: 0.4s;
+    color: aliceblue;
+}
+
+.social a:hover {
+    color: black;
+    background: rgb(31, 171, 218);
+    box-shadow: 0 0 5px red;
+}
