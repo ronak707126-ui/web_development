@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MovieFlix | Watch Movies</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<!-- HEADER  -->
+
+<header>
+
+    <div class="logo">
+        <img src="filmyverse.jpg" alt="Logo" height="50" width="50">
+        <a href="#">Filmy Verse</a>
+    </div>
+
+    <nav>
+
+        <ul>
+
+            <li><a href="#home">Home</a></li>
+            <li><a href="#categories">Movies</a></li>
+            <li><a href="#categories">TV Shows</a></li>
+            <li><a href="#trending">Trending</a></li>
+            <li><a href="#top-rated">Top Rated</a></li>
+            <li><a href="#">Favorites</a></li>
+
+        </ul>
+
+    </nav>
+
+    <div class="icons">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <i class="fa-solid fa-heart"></i>
+
+        <i class="fa-solid fa-user"></i>
+
+    </div>
+
+</header>
+
+<!-- HERO  -->
+
+<section class="hero" id="home">
+
+    <div class="overlay">
+
+        <div class="hero-content">
+
+            <h1>SEARCH ON ,<br>FILMY VERSE</h1>
+
+            <p>
+                Search your favourite movies and discover thousands
+                of trending titles from around the world.
+            </p>
+
+            <div class="search-box">
+
+                <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Movies...">
+                <button id="searchBtn">
+
+                    <i class="fa-solid fa-search"></i>
+
+                    Search
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="movies" id="resultsSection">
+
+    <h2>Search Results</h2>
+
+    <div class="movie-container" id="searchResults">
+
+    </div>
+
+</section>
+
+
+<!-- CATEGORIES  -->
+
+<section class="categories" id="categories">
+
+    <h2>Browse Categories</h2>
+
+    <div class="category-buttons">
+
+        <button>Action</button>
+        <button>Adventure</button>
+        <button>Comedy</button>
+        <button>Drama</button>
+        <button>Horror</button>
+        <button>Romance</button>
+        <button>Animation</button>
+        <button>Sci-Fi</button>
+
+    </div>
+
+</section>
+
+<!-- TRENDING MOVIES  -->
+
+<section class="movies" id="trending">
+    <h2>🔥 Trending Movies</h2>
+        <div class="movie-container">
+
+<!-- Card -->
+
+            <div class="movie-card">
+
+                <img src="spiderman.jpg">
+
+                <h3>Spider-Man: Brand New Day (2026)</h3>
+
+                <p>⭐ 8.2</p>
+
+                <a href="https://www.imdb.com/title/tt22084616/?ref_=nv_srb_trend_title_0"><button>View Details</button></a>
+
+            </div>
+
+            <div class="movie-card">
+
+                <img src="house-of-the-dragon.jpg">
+
+                <h3>House of the Dragon Season</h3>
+
+                <p>⭐ 8.3</p>
+
+                <a href="https://www.imdb.com/title/tt11198330/?ref_=nv_sr_srsg_1_tt_7_nm_0_in_0_q_house"><button>View Details</button></a>
+
+            </div>
+
+            <div class="movie-card">
+
+                <img src="odyssey.webp">
+
+                <h3>The Odyssey</h3>
+
+                <p>⭐ 8.5</p>
+
+                <a href="https://www.imdb.com/title/tt33764258/?ref_=nv_srb_trend_title_1"><button>View Details</button></a>
+
+            </div>
+
+            <div class="movie-card">
+
+                <img src="obsession.webp">
+
+                <h3>Obsession</h3>
+
+                <p>⭐ 7.9</p>
+
+                <a href="https://www.imdb.com/title/tt37287335/?ref_=nv_srb_trend_title_4"><button>View Details</button></a>
+
+            </div>
+
+        </div>
+
+</section>
+
+<!-- FEATURED MOVIE  -->
+
+<section class="featured">
+
+    <div class="featured-image">
+
+        <img src="endgame.jpg">
+
+    </div>
+
+    <div class="featured-content">
+
+        <h2>Featured Movie</h2>
+
+        <h1>Avengers: Endgame</h1>
+
+        <p>After the devastating events of Infinity War, the Avengers assemble once again to restore balance.</p>
+
+        <h3>⭐ IMDb 8.4</h3>
+
+        <div class="buttons">
+
+            <button class="watch">
+
+                <i class="fa-solid fa-play"></i>
+
+                <a href="https://youtu.be/8gcRTMr-rlg?si=GJAgOE5jHVUG9KD_"><button class="watch">View TRAILER</button></a>
+
+            </button>
+
+            <button class="favorite">
+
+            <i class="fa-solid fa-heart"></i>
+
+            Add Favorite
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- TOP RATED MOVIES  -->
+
+<section class="movies" id="top-rated">
+
+    <h2>⭐ Top Rated Movies</h2>
+
+        <div class="movie-container">
+
+            <div class="movie-card">
+
+                <img src="odyssey.webp">
+
+                <h3>The Odyssey (2026)</h3>
+
+                <p>⭐ 8.5</p>
+
+                <a href="https://www.imdb.com/title/tt33764258/?ref_=nv_srb_trend_title_1"><button>View Details</button></a>n>
+
+            </div>
+
+            <div class="movie-card">
+
+                <img src="invite.jpg">
+
+                <h3>The Invite (2026)</h3>
+
+                <p>⭐ 7.9</p>
+
+                <a href="https://www.imdb.com/title/tt14173636/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_the%20invite"><button>View Details</button></a>
+
+            </div>
+
+            <div class="movie-card">
+
+                <img src="obsession.webp">
+
+                <h3>Obsession (2025/2026)</h3>
+
+                <p>⭐ 7.9</p>
+
+                <a href="https://www.imdb.com/title/tt37287335/?ref_=nv_srb_trend_title_4"><button>View Details</button></a>
+
+            </div>
+
+            <div class="movie-card">
+
+                <img src="hail.jpg">
+
+                <h3>Project Hail Mary (2026)</h3>
+
+                <p>⭐ 8.2</p>
+
+                <a href="https://www.imdb.com/title/tt12042730/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_project"><button>View Details</button></a>
+
+            </div>
+
+        </div>
+
+</section>
+
+<!-- NEWS LETTER  -->
+
+<section class="newsletter">
+
+    <h2>Never Miss New Movies</h2>
+
+    <p>Subscribe to get updates on the latest movies and TV shows.</p>
+
+    <div class="subscribe">
+
+        <input type="email" placeholder="Enter your email">
+
+        <button>Subscribe</button>
+
+    </div>
+
+</section>
+
+<!-- FOOTER  -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+
+        <h2>Filmy Verse</h2>
+
+        <p>Your one-stop destination for discovering the latest and greatest movies online.</p>
+
+    </div>
+
+    <div class="footer-box">
+
+        <h3>Quick Links</h3>
+
+            <a href="#home">Home</a>
+            <a href="#categories">Movies</a>
+            <a href="#trending">Trending</a>
+            <a href="#top-rated">Top Rated</a>
+
+    </div>
+
+    <div class="footer-box">
+
+        <h3>Categories</h3>
+
+        <a href="#categories">Action</a>
+        <a href="#categories">Comedy</a>
+        <a href="#categories">Sci-Fi</a>
+        <a href="#categories">Animation</a>
+
+    </div>
+
+    <div class="footer-box">
+
+        <h3>Follow Us</h3>
+
+        <div class="social">
+
+        <i class="fa-brands fa-facebook"></i>
+
+        <i class="fa-brands fa-instagram"></i>
+
+        <i class="fa-brands fa-twitter"></i>
+
+        <i class="fa-brands fa-youtube"></i>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright"> © 2026 Filmy Verse | Designed by Aditya Raj Alok </p>
+
+</footer>
+
+<!-- JS -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
