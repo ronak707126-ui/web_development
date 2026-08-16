@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #mydiv{
+        margin-top: 15px;
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        overflow: auto;
+    }
+    .content{
+        height: 300px;
+    }
+</style>
+<body>
+    <h2>Welcome to event </h2>
+
+    <input id="myinput" placeholder="type Something to search">
+
+    <div id="mydiv">
+        <div class="content">Scroll Inside Me</div>
+    </div>
+
+    <script>
+        const input = document.getElementById("myinput")
+        const div = document.getElementById("mydiv")
+
+        //1. Keyup - when key is released you get Output
+
+        // input.addEventListener('keyup',function(x){
+        //      console.log('key released -' + x.key)
+        // })
+
+        //2. keydown - When Key is Pressed you get output
+
+        // input.addEventListener('keydown',function(x){
+        //      console.log('key pressed -' + x.key)
+        // })
+        
+        //3. Change - Change Happening in the Input
+        input.addEventListener('change',function(y){
+            console.log('value of input - ' + y.target.value)
+        })
+
+        //4. Mouseover - Moving Mouse Over Something
+        div.addEventListener('mouseover' , function(){
+            div.style.backgroundColor = "yellow "
+        })
+
+        div.addEventListener('mouseout' , function(){
+            div.style.backgroundColor = "red"
+        })
+    </script>
+    
+</body>
+</html>
