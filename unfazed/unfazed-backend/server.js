@@ -1,3 +1,11 @@
+const express = require('express');
+const cors = require('cors');
+const app = express();
+
+app.use(cors()); // Sabhi requests allow karne ke liye
+app.use(express.json());
+
+
 require('dotenv').config();
 const app = require('./src/app');
 const connectDB = require('./src/config/db.js');
